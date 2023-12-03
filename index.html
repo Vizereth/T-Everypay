@@ -5,12 +5,12 @@
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Everypay</title>
-	<link rel="stylesheet" href="css/style.min.css?_v=20231203103401" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20231203105533" />
 	<link rel="icon" type="image/png" href="favicon" />
-	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20231203103401" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css?_v=20231203105533" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons&_v=20231203103401" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons&_v=20231203105533" rel="stylesheet" />
 </head>
 
 <body>
@@ -427,31 +427,35 @@
 			<div class="container">
 				<div class="rates__wrapper">
 					<div class="rates-card">
-						<h2 class="rates-card__title">Тарифы</h2>
-						<div class="rates-card__info">
-							<p class="rates-card__desc rates-card__desc--1">
-								Everypay находится в стадии закрытого beta-теста, но у вас
-								есть возможность присоединиться к тестированию сервиса.
-							</p>
-							<p class="rates-card__desc rates-card__desc--2">
-								Для компаний, участвующих в тестировании, сервис навсегда
-								бесплатен. Напишите нам и мы с вами свяжемся.
-							</p>
-						</div>
-						<div class="subscribe-form">
-							<form class="subscribe-form__form subscribe-form__form--active" action="index.html" method="POST">
-								<label class="subscribe-form__label">
-									<input class="subscribe-form__input" type="text" placeholder="Введите email" />
-								</label>
-								<button type="submit" class="subscribe-form__btn">
-									Узнать
-								</button>
-							</form>
-							<div class="subscribe-form__success">
-								<span class="subscribe-form__success-text">Проверьте e-mail!</span>
+						<div class="rates-card__col-1">
+							<h2 class="rates-card__title">Тарифы</h2>
+							<div class="rates-card__info">
+								<p class="rates-card__desc rates-card__desc--1">
+									Everypay находится в стадии закрытого beta-теста, но у вас
+									есть возможность присоединиться к тестированию сервиса.
+								</p>
+								<p class="rates-card__desc rates-card__desc--2">
+									Для компаний, участвующих в тестировании, сервис навсегда
+									бесплатен. Напишите нам и мы с вами свяжемся.
+								</p>
+							</div>
+							<div class="subscribe-form">
+								<form class="subscribe-form__form subscribe-form__form--active" action="index.html" method="POST">
+									<label class="subscribe-form__label">
+										<input class="subscribe-form__input" type="text" placeholder="Введите email" />
+									</label>
+									<button type="submit" class="subscribe-form__btn">
+										Узнать
+									</button>
+								</form>
+								<div class="subscribe-form__success">
+									<span class="subscribe-form__success-text">Проверьте e-mail!</span>
+								</div>
 							</div>
 						</div>
-						<picture><source srcset="img/rates-card/01.webp" type="image/webp"><img class="rates-card__img" src="img/rates-card/01.png" alt="Ruble currency" /></picture>
+						<div class="rates-card__col-2">
+							<picture><source srcset="img/rates-card/01.webp" type="image/webp"><img class="rates-card__img" src="img/rates-card/01.png" alt="Ruble currency" /></picture>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -573,7 +577,7 @@
 		</footer>
 	</div>
 
-	<script src="js/app.min.js?_v=20231203103401" type="module"></script>
+	<script src="js/app.min.js?_v=20231203105533" type="module"></script>
 </body>
 
 </html>
