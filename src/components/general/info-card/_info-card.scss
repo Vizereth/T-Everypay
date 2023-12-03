@@ -1,0 +1,41 @@
+.info-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+
+  @include max1100 {
+    max-width: 550px;
+
+    flex-direction: column-reverse;
+  }
+
+  &__img {
+    margin: 0 80px 0 0;
+
+    @include max1100 {
+      margin: 20px 0 0 0;
+    }
+  }
+
+  &__title {
+    color: $BlackPrimary;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.44px;
+
+    margin: 0 0 24px 0;
+
+    @include max768 {
+      margin: 0 0 12px 0;
+    }
+  }
+
+  &__description {
+    color: $BlackPrimary;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.44px;
+  }
+}

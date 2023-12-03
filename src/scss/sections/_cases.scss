@@ -1,0 +1,86 @@
+.cases {
+  width: 100%;
+
+  margin: 0 0 115px 0;
+  overflow: hidden;
+
+  @include max1100 {
+    padding: 0 20px;
+  }
+
+  @include max768 {
+    margin: 0 0 110px 0;
+    overflow: visible;
+  }
+
+  @include max480 {
+    margin: 0 0 70px 0;
+  }
+
+  &__title {
+    color: $BlackPrimary;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    letter-spacing: 1px;
+
+    margin: 0 0 85px 0;
+
+    @include max768 {
+      text-align: center;
+    }
+
+    @include max768 {
+      margin: 0 0 70px 0;
+    }
+
+    @include max480 {
+      font-size: 32px;
+      line-height: 48px;
+
+      margin: 0 0 40px 0;
+    }
+  }
+
+  &__wrapper {
+    @include container;
+    user-select: none;
+
+    @include max1100 {
+      max-width: 100%;
+      padding: 0 20px 0 0;
+      margin: 0;
+    }
+  }
+
+  &__swiper-pagination.swiper-pagination {
+    position: static;
+
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    @include max1100 {
+      display: flex;
+      margin: 48px 0 0 0;
+    }
+  }
+
+  &__swiper-pag-bullet {
+    width: 12px;
+    height: 12px;
+
+    border: 1px solid $BlueLight;
+    border-radius: 50%;
+  }
+
+  &__swiper-pag-bullet--active {
+    width: 16px;
+    height: 16px;
+
+    background: $BlueGradient;
+    border: none;
+  }
+}

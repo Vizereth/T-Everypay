@@ -1,0 +1,11 @@
+.rates {
+  margin: 0 0 130px 0;
+
+  @include max768 {
+    margin: 0 0 110px 0;
+  }
+
+  @include max480 {
+    margin: 0 0 96px 0;
+  }
+}

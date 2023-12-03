@@ -1,0 +1,81 @@
+.feature-card {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @include max1300 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+
+    @include max1300 {
+      max-width: 400px;
+      margin: 0 0 110px 0;
+    }
+
+    @include max768 {
+      margin: 0 0 40px 0;
+    }
+  }
+
+  &__title {
+    color: $BlackPrimary;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0.99px;
+
+    margin: 0 0 10px 0;
+
+    @include max1300 {
+      text-align: center;
+    }
+
+    @include max768 {
+      font-size: 48px;
+      line-height: 54px;
+
+      margin: 0 0 24px 0;
+    }
+
+    @include max480 {
+      font-size: 32px;
+      line-height: 38px;
+
+      margin: 0 0 12px 0;
+    }
+  }
+
+  &__description {
+    color: $BlackPrimary;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.44px;
+
+    margin: 0 0 48px 0;
+    
+    @include max1300 {
+      text-align: center;
+    }
+
+    @include max768 {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0 0 30px 0;
+    }
+  }
+
+  &__form-wrapper {
+    @include max480 {
+      display: none;
+    }  
+  }
+}

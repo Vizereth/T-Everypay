@@ -1,0 +1,101 @@
+.connect-form {
+  width: 440px;
+
+  @include max480 {
+    width: 260px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+
+    @include max480 {
+      gap: 15px;
+    }
+  }
+
+  &__form--hidden {
+    display: none;
+  }
+
+  &__label {
+    width: 100%;
+  }
+
+  &__input {
+    width: 100%;
+    border: 1px solid rgba($BlueBorder, 0.4);
+    border-radius: 40px;
+    outline: none;
+
+    color: $BlackPrimary;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.96px;
+
+    padding: 8px 20px;
+
+    &::placeholder {
+      color: rgba($BlueBorder, 0.4);
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 28px;
+      letter-spacing: 0.45px;
+
+      @include max480 {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+
+    &:hover {
+      box-shadow: 0 0 10px rgba($BlueBorder, 0.4);
+      transition: box-shadow $TransitionHover;
+    }
+  }
+
+  &__input--about {
+    border-radius: 20px;
+    resize: none;
+  }
+
+  &__btn {
+    background: $BlueGradient;
+
+    color: $FullWhite;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0.38px;
+
+    border: none;
+    outline: none;
+    border-radius: 44px;
+
+    padding: 13px 28px;
+
+    align-self: flex-start;
+
+    &:hover {
+      box-shadow: 0px 6px 18px $ButtonShadow;
+      transition: box-shadow $TransitionHover;
+    }
+  }
+
+  &__success {
+    display: none;
+
+    color: $BlackPrimary;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.96px;
+  }
+
+  &__success--active {
+    display: flex;
+  }
+}

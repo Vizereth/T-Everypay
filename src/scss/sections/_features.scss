@@ -1,0 +1,33 @@
+.features {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 0 235px 0;
+
+  @include max768 {
+    margin: 0 0 66px 0;
+  }
+
+  &__wrapper {
+    @include container;
+    user-select: none;
+
+    @include max1300 {
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+
+    @include max1300 {
+      flex-direction: row;
+      gap: 0;
+    }
+  }
+}

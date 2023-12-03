@@ -1,0 +1,136 @@
+.subscribe-form {
+  width: 440px;
+  max-width: 440px;
+
+  @include max1300 {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  &__form {
+    display: none;
+    width: 100%;
+
+    background: $LightBlue;
+    position: relative;
+
+    border-radius: 44px;
+
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__form--without-bg {
+      border: 1px solid rgba($BlueBorder, 0.4);
+      background: none;
+  }
+
+  &__form--active {
+    display: flex;
+  }
+
+  &__success {
+    background: $LightBlue;
+
+    border-radius: 44px;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    padding: 12px 20px;
+  }
+
+  &__success--active {
+    display: flex;
+  }
+
+  &__success-text {
+    display: flex;
+    align-items: center;
+
+    color: $BlackPrimary;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.96px;
+
+    &:before {
+      content: url("../img/svg/checkmark.svg");
+      width: 16px;
+      height: 16px;
+
+      margin: 0 16px 0 0;
+    }
+  }
+
+  &__label {
+    width: 100%;
+  }
+
+  &__input {
+    position: relative;
+
+    width: 70%;
+
+    border: none;
+    outline: none;
+
+    border-radius: 44px;
+
+    color: $BlackPrimary;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.96px;
+
+    padding: 12px 20px;
+
+    &::placeholder {
+      color: rgba($BluePrimary, 0.6);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0.96px;
+    }
+
+    &:hover {
+      box-shadow: 0 0 8px $InputShadow inset;
+      transition: box-shadow $TransitionHover;
+    }
+
+    @include max480 {
+      width: 60%;
+    }
+  }
+
+  &__btn {
+    background: $BlueGradient;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+
+    color: $FullWhite;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.44px;
+
+    border: none;
+    outline: none;
+
+    padding: 12px 52px;
+    border-radius: 44px;
+
+    &:hover {
+      box-shadow: 0px 6px 18px $ButtonShadow;
+      transition: box-shadow $TransitionHover;
+    }
+
+    @include max480 {
+      padding: 12px 27px;
+    }
+  }
+}
