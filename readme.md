@@ -1,8 +1,8 @@
-# Test task for adict - Everypay
+# Test task for адикт - Everypay
 
 ## Deploy
 
-https://sophrona.github.io/T-Everypay
+https://vizereth.github.io/T-Everypay
 
 ## Project setup
 ```
