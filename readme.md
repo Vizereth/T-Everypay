@@ -1,8 +1,8 @@
-# Test task for адикт - Everypay
+# Landing Page - Everypay
 
 ## Deploy
 
-https://vizereth.github.io/T-Everypay
+https://vizereth.github.io/test-adict
 
 ## Project setup
 ```
