@@ -1,5 +1,5 @@
 {
-	"homepage": "http://sophrona.github.io/T-Everypay",
+	"homepage": "http://vizereth.github.io/test-adict",
 	"name": "fls-start",
 	"version": "3.0.0",
 	"description": "Start template with Gulp and Webpack",
@@ -76,6 +76,9 @@
 		"webpack-stream": "latest"
 	},
 	"dependencies": {
+		"gh": "^2.8.9",
+		"gh-pages": "^6.3.0",
+		"pages": "^0.0.16",
 		"simplebar": "latest"
 	}
 }
